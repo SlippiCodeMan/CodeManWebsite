@@ -4,6 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:wght@400;700&display=swap');
 
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  --green: #44A963;
+  --blue: #5865F2;
+  --black: #2C2F33;
+  height: 100%;
+  background-color: var(--black);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* Links */
 a,
 a:focus,
@@ -17,28 +32,17 @@ a:hover {
 .btn-secondary:focus {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #7289da;
-  border: .05rem solid #7289da;
+  background-color: var(--blue);
+  border: .05rem solid var(--blue);
 }
 
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #2C2F33;
-  font-family: 'Source Sans Pro', sans-serif;
-}
 
 .head-section {
-  background-color: #44A963;
+  background-color: var(--black);
 }
 
 .body-section {
-  background-color: #2C2F33;
+  background-color: var(--black);
 }
 
 body {
@@ -60,7 +64,7 @@ body {
 }
 
 .banner {
-  background-color: #44A963;
+  background-color: var(--green);
 }
 
 .documentation {
@@ -126,7 +130,7 @@ body {
   height: auto;
   margin: 3rem;
   margin-bottom: 1rem;
-  background-color: #44A963;
+  background-color: var(--green);
 }
 
 .title {
@@ -135,11 +139,15 @@ body {
 
 .pretty-blockquote {
   width:100%;
-  border-left:0.5rem solid #44A963 ;
+  border-left:0.5rem solid var(--green);
   padding-left:0.5rem;
   line-height:1.6;
   background:#36393f;
   font-family: 'Source Code Pro', monospace;
+}
+
+.banner-button {
+  margin: 0.3rem;
 }
 
 
